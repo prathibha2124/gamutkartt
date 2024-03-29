@@ -26,7 +26,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'sshpass scp /root/.jenkins/workspace/gamutkart-demo/target/gamutkart.war ubuntu@172.31.36.210:/opt/tomcat/apache-tomcat-10.1.19/webapps'
+		sh 'scp /gamutkart-demo/target/gamutkart.war ubuntu@172.31.36.210:/opt/tomcat/apache-tomcat-10.1.19/webapps'
 	}
     }
 }
