@@ -7,13 +7,13 @@ pipeline {
 	        	checkout scm
 	    	}
         }
-	/* stage ('Build'){
+	 stage ('Build'){
 	        steps {
 			sh 'mvn clean install'
                 }
 	}
 
-	stage('Run Tests') {
+	/*stage('Run Tests') {
 	    steps {
 	       sh 'mvn test'
 	    }
