@@ -24,9 +24,9 @@ pipeline {
                 sh 'mvn package'
             }
         }
-	/*stage('Deployment') {
+	stage('Deployment') {
 	   steps {
-		sh 'scp /root/.jenkins/workspace/gamutkart-demo/target/gamutkart.war ubuntu@172.31.36.210:/opt/tomcat/apache-tomcat-10.1.19/webapps' 
+		sh 'scp /root/var/lib/jenkins/workspace/gamutkart-demo/target/gamutkart.war @10.128.0.4:/home/kiranv2111/tomcat/apache-tomcat-9.0.89/webapps' 
 	   }
     } */
 }
